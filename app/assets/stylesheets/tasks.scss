@@ -30,6 +30,10 @@
   margin-right: 10px;
 }
 
+.new-task-btn a {
+  text-decoration: none;
+}
+
 .content-wrapper {
   display: flex;
 }
@@ -40,12 +44,47 @@
   height: 80vh;
 }
 
-.main-task {
-  background-color: lightyellow;
-  width: calc(100%-30vw);
-  height: 80vh;
+.tasks {
+  overflow: scroll;
 }
 
+.task {
+  padding: 20px 0 40px;
+}
+
+.task a {
+  text-decoration: none;
+}
+
+.main-task {
+  background-color: lightyellow;
+  width: 75vw;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.task-content {
+  width: 55vw;
+  height: 60vh;
+  background-color: skyblue;
+  text-align: center;
+}
+
+.task-date {
+  height: 10vh;
+  font-size: 30px;
+}
+
+.task-title {
+  height: 10vh;
+  font-size: 40px;
+}
+
+.task-text {
+  font-size: 30px;
+}
 // new
 .new-task {
   background-color: lightgrey;
