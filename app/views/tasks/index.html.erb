@@ -10,6 +10,13 @@
 </div>
 <div class='content-wrapper'>
   <div class='side-menu'>
+    <div class='tasks' >
+    <% @tasks.each do |task| %>
+      <div class='task'>
+        <%= task.title%>
+      </div>
+    <% end %>
+    </div>
   </div>
   <div class='main-task'>
   </div>
