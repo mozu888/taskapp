@@ -1,3 +1,4 @@
+// index
 .wrapper {
   display: flex;
   background-color: lightblue;
@@ -25,7 +26,7 @@
   justify-content: end;
 }
 
-.new-task {
+.new-task-btn {
   margin-right: 10px;
 }
 
@@ -43,4 +44,18 @@
   background-color: lightyellow;
   width: calc(100%-30vw);
   height: 80vh;
+}
+
+// new
+.new-task {
+  background-color: lightgrey;
+  font-size: 30px;
+}
+
+.new-task-form {
+  text-align: center;
+}
+
+.actions {
+  text-align: center;
 }
