@@ -1,6 +1,6 @@
 ## テーブル設計
 
-## plansテーブル
+## tasksテーブル
 | column      | type    | option      |
 | ----------- | ------- | ----------- |
 | title       | string  | null: false |
@@ -18,4 +18,4 @@ belongs_to :user
 | encrypted_password | string | null: false                    |
 
 ## association
-has_many :plans
+has_many :tasks
