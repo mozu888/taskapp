@@ -1,11 +1,11 @@
 ## テーブル設計
 
 ## tasksテーブル
-| column      | type    | option      |
-| ----------- | ------- | ----------- |
-| title       | string  | null: false |
-| text        | text    | null: false |
-| date        | integer | null: false |
+| column | type    | option      |
+| ------ | ------- | ----------- |
+| title  | string  | null: false |
+| text   | text    | null: false |
+| date   | integer | null: false |
 
 ## association
 belongs_to :user
