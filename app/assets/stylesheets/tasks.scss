@@ -1,0 +1,61 @@
+// index
+.wrapper {
+  display: flex;
+  background-color: lightblue;
+  height: 20vh;
+  justify-content: space-between;
+}
+
+.left-side {
+  width: 40vw;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.app-title {
+  color: black;
+  font-size: 25px;
+}
+
+.right-side {
+  width: 20vw;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.new-task-btn {
+  margin-right: 10px;
+}
+
+.content-wrapper {
+  display: flex;
+}
+
+.side-menu {
+  background-color: lightgray;
+  width: 25vw;
+  height: 80vh;
+}
+
+.main-task {
+  background-color: lightyellow;
+  width: calc(100%-30vw);
+  height: 80vh;
+}
+
+// new
+.new-task {
+  background-color: lightgrey;
+  font-size: 30px;
+}
+
+.new-task-form {
+  text-align: center;
+}
+
+.actions {
+  text-align: center;
+}

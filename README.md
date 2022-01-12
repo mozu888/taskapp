@@ -1,11 +1,11 @@
 ## テーブル設計
 
-## plansテーブル
-| column      | type    | option      |
-| ----------- | ------- | ----------- |
-| title       | string  | null: false |
-| text        | text    | null: false |
-| date        | integer | null: false |
+## tasksテーブル
+| column | type   | option      |
+| ------ | ------ | ----------- |
+| title  | string | null: false |
+| text   | text   | null: false |
+| date   | date   | null: false |
 
 ## association
 belongs_to :user
@@ -18,4 +18,4 @@ belongs_to :user
 | encrypted_password | string | null: false                    |
 
 ## association
-has_many :plans
+has_many :tasks

@@ -1,0 +1,36 @@
+<div class='new-task-content'>
+  <div class='wrapper'>
+    <div class='left-side'>
+      <div class='app-title'>タスク管理アプリ</div>
+    </div>
+  </div>
+  <div class='new-task'>
+    <%= form_with model: @task, local: true do |f|%>
+    <div class='new-task-form'>
+      タスクの追加
+      <div class='new-task-title'>
+        <div class="weight-bold-text">
+        タスク名
+        </div>
+        <%= f.text_field :title, class: 'new-task-title-form', placeholder: 'タスク名を入力してください'%>
+      </div>
+      <div class='new-task-text'>
+        <div class="weight-bold-text">
+        タスク内容
+        </div>
+        <%= f.text_area :text, class: 'new-task-text-form', placeholder: 'タスク内容を入力してください'%>
+      </div>
+      <div class='new-task-date'>
+        <div class="weight-bold-text">
+        タスクの日付
+        </div>
+        <%= f.date_field :date %>
+      </div>
+      </div>
+      <div class="actions">
+        <%= f.submit "保存する", class: :form__btn  %>
+      </div>
+    </div>
+    <% end %>
+  </div>
+</div>
