@@ -2,6 +2,31 @@
   display: flex;
   background-color: lightblue;
   height: 20vh;
+  justify-content: space-between;
+}
+
+.left-side {
+  width: 40vw;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.app-title {
+  color: black;
+  font-size: 25px;
+}
+
+.right-side {
+  width: 20vw;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.new-task {
+  margin-right: 10px;
 }
 
 .content-wrapper {
