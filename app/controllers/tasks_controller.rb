@@ -14,6 +14,10 @@ class TasksController < ApplicationController
       render :new
     end
   end
+  def show
+    @tasks = Task.all
+    @task = Task.find(params[:id])
+  end
   private
   def task_params
     params.require(:task).permit(:title, :text, :date)
