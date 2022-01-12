@@ -10,7 +10,29 @@
 </div>
 <div class='content-wrapper'>
   <div class='side-menu'>
+    <div class='tasks' >
+    タスク一覧
+    <% @tasks.each do |task| %>
+      <div class='task'>
+        <%=link_to task.title %>
+      </div>
+    <% end %>
+    </div>
   </div>
   <div class='main-task'>
+    <div class='task-content'>
+      <div class='task-date'>
+        日付
+        <%# <%= @task.date %> 
+      </div>
+      <div class='task-title'>
+        タイトル
+        <%# <%= @task.title %> 
+      </div>
+      <div class='task-text'>
+        内容
+        <%# <%= @task.text %> 
+      </div>
+    </div>
   </div>
 </div>
