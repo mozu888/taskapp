@@ -18,6 +18,17 @@ class TasksController < ApplicationController
     @tasks = Task.all
     @task = Task.find(params[:id])
   end
+  def edit
+    @task = Task.find(params[:id])
+  end
+  def update
+    @task.update(task_params)
+    if @task.save
+      redirect_to root_path
+    else
+      render :edit
+    end
+  end
   private
   def task_params
     params.require(:task).permit(:title, :text, :date)
